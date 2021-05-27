@@ -4,7 +4,7 @@
         <div class="text-white pt-40  max-w-2xl mx-auto font-bold hero-content"> 
             <h1 class="text-4xl">The best free stock photos and videos shared by talented creators.</h1>
             <input class="w-full h-14 mt-8 pl-4 text-lg outline-none text-gray-600 rounded" placeholder="Search for free photos and videos"/>
-            <p class="text-left pl-0 max-w-2xl">Suggested: <span class="te ">trees  sky  forest  white background  branch  flowers  more</span></p>
+            <p class="text-left pl-0 max-w-2xl">Suggested: <span class="text-xs font-normal ">trees  sky  forest  white background  branch  flowers  more</span></p>
         </div>
         </div>
     </div>
