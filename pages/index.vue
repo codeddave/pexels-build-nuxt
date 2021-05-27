@@ -1,8 +1,13 @@
 <template>
-  <div class="c">
+  <div class="c overflow-hidden">
     <Hero/>
-    <div class="pictures-container"> 
-        <Picture v-for="picture in pictures" v-bind:key="picture.id" :picture="picture.url"/>
+    <Menu/>
+    <div class="px-6 md:pl-10">
+      <p class="pt-4 font-bold text-gray-600 text-xl">Free Stock Photos</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-1 pt-4 ">
+        <Picture v-for="picture in pictures" v-bind:key="picture.id" :picture="picture.src.original"/>
+    </div>
     </div>
   </div>
 </template>
@@ -28,13 +33,14 @@ export default {
   async created(){
     const config = {
       headers: {
-        "Authorization": "563492ad6f9170000100000197e2f629736443e4863dc69bffc419d5"
+        "Authorization": process.env.NUXT_ENV_API_KEY
       }
     }
     try{
       const res = await axios.get("https://api.pexels.com/v1/curated", config)
       this.pictures = res.data.photos
       console.log(res.data)
+         console.log(res.data.photos[0].url)
     }catch(error) {
       console.log(error)
     }
