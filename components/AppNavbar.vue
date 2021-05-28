@@ -1,5 +1,5 @@
 <template lang="">
-    <div class=" sticky top-0  bg-transparent -mt-20  z-50 flex justify-between text-white font-bold w-full text-lg">
+    <div class=" sticky top-0 -mt-20  z-50 py-3 flex justify-between text-white font-bold w-full text-lg navvv">
         <div> 
             <p class="pl-4">Pexels</p>
         </div>
@@ -16,9 +16,12 @@
 </template>
 <script>
 export default {
-    name: "AppNavbar"
-}
-</script>
-<style lang="">
+    name: "AppNavbar",
     
+}
+
+
+</script>
+<style >
+  
 </style>

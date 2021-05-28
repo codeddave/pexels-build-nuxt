@@ -1,6 +1,6 @@
 <template>
   <div class="relative h-full">
-    <AppNavbar />
+    <AppNavbar class="navvv"/>
     <Nuxt  />
   </div>
 </template>
@@ -12,11 +12,28 @@ import AppNavbar from '../components/AppNavbar.vue'
 export default {
   components: {
     AppNavbar
-  }
+  }, 
+ mounted(){
+    window.onscroll = () => {
+    const myNav = document.querySelector(".navvv")
+console.log(window.scrollY)
+
+     "use strict";
+    if (window.scrollY>= 200) {
+          myNav.classList.add("bg-gray-600");
+        myNav.classList.remove("nav-transparent")
+    } else {
+       myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
 }
+ }
+}
+
 </script>
 <style>
-
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;}
 html {
   font-family:
     'Source Sans Pro',
