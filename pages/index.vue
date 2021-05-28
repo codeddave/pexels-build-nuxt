@@ -1,5 +1,5 @@
 <template>
-  <div class="c overflow-hidden">
+  <div class="c overflow-hden ">
     <Hero/>
     <Menu/>
     <div class="px-6 md:pl-10">

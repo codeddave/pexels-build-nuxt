@@ -1,7 +1,7 @@
 <template>
-  <div>
-<!--     <AppNavbar/> -->
-    <Nuxt />
+  <div class="relative h-full">
+    <AppNavbar />
+    <Nuxt  />
   </div>
 </template>
 
