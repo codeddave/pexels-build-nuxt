@@ -1,5 +1,5 @@
 <template lang="">
-    <div class=" sticky top-0 -mt-20  z-50 py-3 flex justify-between text-white font-bold w-full text-lg navvv">
+    <div class=" sticky top-0 -mt-20  z-50 py-3 flex justify-between items-center text-white font-bold w-full text-lg navvv">
         <div> 
             <p class="pl-4">Pexels</p>
         </div>
