@@ -1,11 +1,11 @@
 <template>
-  <div class="c overflow-hidden flex flex-col">
+  <div class="c overflo-hidden flex flex-col">
     <Hero/>
     <Menu/>
     <div class="px-6 md:pl-10">
       <p class="pt-4 font-bold text-gray-600 text-xl">Free Stock Photos</p>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-1 pt-4 gap-x-4 ">
+    <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-1 pt-4 gap-x-4 gap-y-4 ">
         <Picture v-for="picture in pictures" v-bind:key="picture.id" :picture="picture.src.original"/>
     </div>
     </div>
